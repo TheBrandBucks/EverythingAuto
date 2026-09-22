@@ -431,8 +431,8 @@ export default function Layout({
         </SheetTrigger>
         
         {/* max-h-screen aur overflow-y-auto add kiya gaya hai */}
-        <SheetContent className="!top-[88px] !h-[calc(100dvh-88px)] !w-full !max-h-none overflow-y-auto flex flex-col justify-between sm:!top-[52px] sm:!h-[calc(100dvh-52px)] sm:!w-80">
-            <div className="flex-1 overflow-y-auto pr-1">
+        <SheetContent className="!top-[88px] !h-[calc(100dvh-88px)] !w-full !max-h-none overflow-y-auto flex flex-col sm:!top-[52px] sm:!h-[calc(100dvh-52px)] sm:!w-80">
+            <div className="overflow-y-auto pr-1">
             <nav className="mt-0 flex flex-col space-y-2">
                     <Accordion type="single" collapsible className="w-full">
                         {navigationItems.map((item) => item.submenu ? (
