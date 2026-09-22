@@ -328,7 +328,9 @@ export default function Layout({
                         <div className="flex h-20 relative z-10 shrink-0 -ml-px">
                             {/* Left Slice (Corner) */}
                             <div className="w-[50px] h-full relative shrink-0">
-                                <div className="absolute inset-0 bg-white shadow-none" style={{ clipPath: "path('M0 0 H50 V80 C25 80 25 48 0 48 Z')" }} />
+                                <svg className="absolute inset-0 h-full w-full" viewBox="0 0 50 80" preserveAspectRatio="none" aria-hidden="true">
+                                    <path d="M0 0 H50 V80 C25 80 25 48 0 48 Z" fill="white" />
+                                </svg>
                                 <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 50 80">
                                     <path d="M0 47.5 C25 47.5 25 79.5 50 79.5" fill="none" stroke="currentColor" strokeOpacity={0.4} strokeWidth={1} className="text-slate-500" />
                                     <path d="M0 44.5 C25 44.5 25 76.5 50 76.5" fill="none" stroke="currentColor" strokeOpacity={0.2} strokeWidth={0.5} className="text-slate-400" />
@@ -496,7 +498,9 @@ export default function Layout({
 
                             {/* Right Slice (Corner) */}
                             <div className="w-[50px] h-full relative shrink-0 -ml-px">
-                                <div className="absolute inset-0 bg-white" style={{ clipPath: "path('M0 0 H50 V48 C25 48 25 80 0 80 Z')" }} />
+                                <svg className="absolute inset-0 h-full w-full" viewBox="0 0 50 80" preserveAspectRatio="none" aria-hidden="true">
+                                    <path d="M0 0 H50 V48 C25 48 25 80 0 80 Z" fill="white" />
+                                </svg>
                                 <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 50 80">
                                     <path d="M0 79.5 C25 79.5 25 47.5 50 47.5" fill="none" stroke="currentColor" strokeOpacity={0.4} strokeWidth={1} className="text-slate-500" />
                                     <path d="M0 76.5 C25 76.5 25 44.5 50 44.5" fill="none" stroke="currentColor" strokeOpacity={0.2} strokeWidth={0.5} className="text-slate-400" />
