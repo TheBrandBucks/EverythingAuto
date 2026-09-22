@@ -150,9 +150,11 @@ const spin = {
 
       {/* Certified Technicians */}
       <div className="rounded-2xl border border-white/15 bg-white/10 p-6 text-center shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:bg-white/15">
-        <div className="text-4xl font-black text-white sm:text-5xl">ASE</div>
+        <div className="text-4xl font-black text-white sm:text-5xl">
+          {inView && <CountUp end={30} duration={3} />}+
+        </div>
         <div className="mt-2 text-sm text-slate-300 sm:text-base">
-          Certified Technicians
+          ASE Certified Technicians
         </div>
       </div>
 

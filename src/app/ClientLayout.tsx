@@ -402,7 +402,7 @@ export default function Layout({
                                                 boxShadow:
                                                     "inset 0 -2px 5px rgba(249, 195, 195, 0.65), inset 0 2px 5px rgba(19, 19, 19, 0.4), 0 2px 5px rgba(0, 0, 0, 0.11)",
                                             }}
-                                            className="action-button action-button-call md:text-sm 2xl:px-6 2xl:text-base px-4 xl:px-4 md:px-2 py-2 xl:py-3 text-sm xl:text-sm flex items-center">
+                                            className="action-button action-button-call flex items-center px-4 py-2 text-sm md:px-2 md:text-sm lg:px-3 lg:py-1.5 lg:text-xs xl:px-4 xl:py-3 xl:text-sm 2xl:px-6 2xl:text-base">
                                             <Phone className="w-4 h-4 mr-1" />
                                             CALL NOW
                                         </Button>
@@ -413,7 +413,7 @@ export default function Layout({
                                                 boxShadow:
                                                     "inset 0 -2px 5px rgba(138, 193, 252, 0.57), inset 0 2px 5px rgba(19, 19, 19, 0.4), 0 2px 5px rgba(0, 0, 0, 0.11)",
                                             }}
-                                            className="action-button action-button-book px-4 md:px-2 md:text-sm xl:px-4 py-2 xl:py-3 2xl:px-6 2xl:text-base text-sm xl:text-sm">
+                                            className="action-button action-button-book px-4 py-2 text-sm md:px-2 md:text-sm lg:px-3 lg:py-1.5 lg:text-xs xl:px-4 xl:py-3 xl:text-sm 2xl:px-6 2xl:text-base">
                                             <Calendar className="w-4 h-4 mr-1" />
                                             Book Appointment
                                         </Button>
@@ -561,16 +561,16 @@ export default function Layout({
                 type="button"
                 // onClick={() => setFooterServicesOpen((open) => !open)}
                 aria-expanded={footerServicesOpen}
-                className="app-focus-ring mb-5 flex w-full items-center justify-between gap-3 text-left text-sm font-extrabold uppercase tracking-[0.18em] text-white"
+                className="app-focus-ring mb-5 flex w-full items-center justify-center gap-3 text-center text-sm font-extrabold uppercase tracking-[0.18em] text-white sm:justify-between sm:text-left"
               >
                 <span className="flex items-center gap-3"><span className="h-5 w-1 rounded-full bg-red-500" />Our Services</span>
                 {/* <ChevronDown className={`h-5 w-5 text-blue-300 transition-transform duration-300 ${footerServicesOpen ? "rotate-180" : ""}`} /> */}
               </button>
               <div className={`grid transition-all duration-300 ${footerServicesOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-70"}`}>
-                <ul className="grid min-h-0 grid-cols-1 gap-x-5 gap-y-3 overflow-hidden text-sm sm:grid-cols-2 lg:grid-cols-1">
+                <ul className="grid min-h-0 grid-cols-1 gap-x-5 gap-y-3 overflow-hidden text-sm text-center sm:grid-cols-2 sm:text-left lg:grid-cols-1">
                   {navigationItems.find((item) => item.name === "Services")?.submenu?.map((service) => (
                     <li key={service.name}>
-                      <Link href={createPageUrl(service.path)} className="group flex items-center gap-2 text-gray-400 transition-colors hover:text-white">
+                      <Link href={createPageUrl(service.path)} className="group flex items-center justify-center gap-2 text-gray-400 transition-colors hover:text-white sm:justify-start">
                         <span className="h-1 w-1 rounded-full bg-blue-400 transition-transform group-hover:scale-150" />
                         {service.name}
                       </Link>
@@ -581,29 +581,29 @@ export default function Layout({
             </div>
 
             {/* Contact Info */}
-            <div className={`self-start rounded-2xl border border-white/10 bg-white/[0.04] p-5 transition-[transform,opacity,filter] duration-700 delay-200 ease-[cubic-bezier(0.22,1,0.36,1)] ${footerVisible ? "translate-y-0 opacity-100 blur-0" : "translate-y-12 opacity-0 blur-sm"}`}>
-              <h4 className="mb-5 flex items-center gap-3 text-sm font-extrabold uppercase tracking-[0.18em] text-white"><span className="h-5 w-1 rounded-full bg-blue-500" />Contact Info</h4>
+            <div className={`self-start rounded-2xl border border-white/10 bg-white/[0.04] p-5 text-center transition-[transform,opacity,filter] duration-700 delay-200 ease-[cubic-bezier(0.22,1,0.36,1)] sm:text-left ${footerVisible ? "translate-y-0 opacity-100 blur-0" : "translate-y-12 opacity-0 blur-sm"}`}>
+              <h4 className="mb-5 flex items-center justify-center gap-3 text-sm font-extrabold uppercase tracking-[0.18em] text-white sm:justify-start"><span className="h-5 w-1 rounded-full bg-blue-500" />Contact Info</h4>
               <ul className="space-y-4 text-sm text-gray-300">
-                <li className="flex items-start space-x-3">
-                  <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-blue-400" />
+                <li className="flex flex-col items-center space-y-2 sm:flex-row sm:items-start sm:space-x-3 sm:space-y-0">
+                  <MapPin className="h-5 w-5 flex-shrink-0 text-blue-400 sm:mt-1" />
                   <a href="https://www.google.com/maps/place/980+Washington+St,+Franklin+Square,+NY+11010" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-white">
                     980 Washington St<br/>Franklin Square, NY 11010
                   </a>
                 </li>
-                 <li className="flex items-start space-x-3">
-                  <Phone className="mt-1 h-5 w-5 flex-shrink-0 text-red-400" />
+                 <li className="flex flex-col items-center space-y-2 sm:flex-row sm:items-start sm:space-x-3 sm:space-y-0">
+                  <Phone className="h-5 w-5 flex-shrink-0 text-red-400 sm:mt-1" />
                   <a href="tel:516-775-9724" className="transition-colors hover:text-white">(516) 775-9724</a>
                 </li>
-                <li className="flex items-start space-x-3">
-                  <Mail className="mt-1 h-5 w-5 flex-shrink-0 text-blue-400" />
+                <li className="flex flex-col items-center space-y-2 sm:flex-row sm:items-start sm:space-x-3 sm:space-y-0">
+                  <Mail className="h-5 w-5 flex-shrink-0 text-blue-400 sm:mt-1" />
                   <a href="mailto:everythingautonewyork@gmail.com" className="break-all transition-colors hover:text-white">everythingautonewyork@gmail.com</a>
                 </li>
               </ul>
             </div>
 
             {/* Business Hours */}
-            <div className={`self-start rounded-2xl border border-white/10 bg-white/[0.04] p-5 transition-[transform,opacity,filter] duration-700 delay-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${footerVisible ? "translate-y-0 opacity-100 blur-0" : "translate-y-12 opacity-0 blur-sm"}`}>
-              <h4 className="mb-5 flex items-center gap-3 text-sm font-extrabold uppercase tracking-[0.18em] text-white"><span className="h-5 w-1 rounded-full bg-red-500" />Business Hours</h4>
+            <div className={`self-start rounded-2xl border border-white/10 bg-white/[0.04] p-5 text-center transition-[transform,opacity,filter] duration-700 delay-300 ease-[cubic-bezier(0.22,1,0.36,1)] sm:text-left ${footerVisible ? "translate-y-0 opacity-100 blur-0" : "translate-y-12 opacity-0 blur-sm"}`}>
+              <h4 className="mb-5 flex items-center justify-center gap-3 text-sm font-extrabold uppercase tracking-[0.18em] text-white sm:justify-start"><span className="h-5 w-1 rounded-full bg-red-500" />Business Hours</h4>
               <ul className="space-y-3 text-sm text-gray-300">
                 <li>
                   <a href="https://myalp.io/nqc45n" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors cursor-pointer">
@@ -612,7 +612,7 @@ export default function Layout({
                 </li>
                 <li>Sunday: Closed</li>
               </ul>
-              <div className="mt-7 flex flex-wrap gap-3">
+              <div className="mt-7 flex flex-wrap justify-center gap-3 sm:justify-start">
                           {socialLinks.map(link => (
     <a
       key={link.name}

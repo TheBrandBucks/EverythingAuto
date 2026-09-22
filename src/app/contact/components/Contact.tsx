@@ -491,7 +491,7 @@ export default function Contact() {
 >
   <CardContent className="p-4 sm:p-6 lg:p-8">
 
-    <div className="mb-5">
+    <div className="mb-5 text-center sm:text-left">
       <div className="mb-2 inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-blue-700">
         <MapPin className="h-3.5 w-3.5" />
         Visit Us
@@ -505,7 +505,7 @@ export default function Contact() {
     <ul className="space-y-3 sm:space-y-4">
 
       {/* Address */}
-      <li className="flex items-start gap-3 rounded-xl bg-slate-50 p-3 sm:items-center sm:gap-4">
+      <li className="flex flex-col items-center gap-2 rounded-xl bg-slate-50 p-3 text-center sm:flex-row sm:items-center sm:gap-4 sm:text-left">
         <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-blue-100">
           <MapPin className="h-5 w-5 text-blue-600" />
         </div>
@@ -521,7 +521,7 @@ export default function Contact() {
       </li>
 
       {/* Phone */}
-      <li className="flex items-start gap-3 rounded-xl bg-slate-50 p-3 sm:items-center sm:gap-4">
+      <li className="flex flex-col items-center gap-2 rounded-xl bg-slate-50 p-3 text-center sm:flex-row sm:items-center sm:gap-4 sm:text-left">
         <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-blue-100">
           <Phone className="h-5 w-5 text-blue-600" />
         </div>
@@ -538,7 +538,7 @@ export default function Contact() {
       </li>
 
       {/* Email */}
-      <li className="flex items-start gap-3 rounded-xl bg-slate-50 p-3 sm:items-center sm:gap-4">
+      <li className="flex flex-col items-center gap-2 rounded-xl bg-slate-50 p-3 text-center sm:flex-row sm:items-center sm:gap-4 sm:text-left">
         <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-blue-100">
           <Mail className="h-5 w-5 text-blue-600" />
         </div>
@@ -552,7 +552,7 @@ export default function Contact() {
       </li>
 
       {/* Hours */}
-      <li className="flex items-start gap-3 rounded-xl bg-slate-50 p-3 sm:items-center sm:gap-4">
+      <li className="flex flex-col items-center gap-2 rounded-xl bg-slate-50 p-3 text-center sm:flex-row sm:items-center sm:gap-4 sm:text-left">
         <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-blue-100">
           <Clock className="h-5 w-5 text-blue-600" />
         </div>

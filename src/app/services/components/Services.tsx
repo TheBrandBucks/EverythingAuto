@@ -14,21 +14,21 @@ import { motion } from "framer-motion"
 import  {fadeIn}  from '@/utils/motion';
 const services = [
 
-    { icon: '/car-engine.png', title: "Engine Repair", path: "EngineRepair", description: "Expert diagnostics and repair for engine troubles." },
-  { icon: '/disc-brake.webp', title: "Brake Service", path: "BrakeService", description: "Ensuring your vehicle stops safely and reliably." },
-  { icon: '/gear-Transmition.webp', title: "Transmission", path: "Transmission", description: "Smooth gear shifting and performance." },
-  { icon: '/CarAC.webp', title: "Air Conditioning", path: "AirConditioning", description: "Stay cool with our A/C repair and recharge services." },
+    { icon: '/car-engine.png', title: "Engine Repair", path: "engine-repair", description: "Expert diagnostics and repair for engine troubles." },
+  { icon: '/disc-brake.webp', title: "Brake Service", path: "brake-service", description: "Ensuring your vehicle stops safely and reliably." },
+  { icon: '/gear-Transmition.webp', title: "Transmission", path: "transmission", description: "Smooth gear shifting and performance." },
+  { icon: '/CarAC.webp', title: "Air Conditioning", path: "air-conditioning", description: "Stay cool with our A/C repair and recharge services." },
  
-  { icon: '/diagnostics.webp', title: "Diagnostics", path: "Diagnostics", description: "Pinpointing issues with check engine lights." },
+  { icon: '/diagnostics.webp', title: "Diagnostics", path: "diagnostics", description: "Pinpointing issues with check engine lights." },
  
-  { icon: '/electric-system.webp', title: "Electrical Systems", path: "ElectricalSystems", description: "Fixing shorts, wiring, and battery issues." },
-  { icon: '/oil-change.webp', title: "Oil Changes", path: "OilChanges", description: "Essential maintenance for engine longevity." },
-  { icon: '/Tire-repairing.webp', title: "Wheel & Tire", path: "WheelTire", description: "Tire rotation, balancing, and replacement." },
-   { icon: '/suspension.webp', title: "Suspension & Steering", path: "SuspensionSteering", description: "Smooth out your ride and maintain control." },
+  { icon: '/electric-system.webp', title: "Electrical Systems", path: "electrical-systems", description: "Fixing shorts, wiring, and battery issues." },
+  { icon: '/oil-change.webp', title: "Oil Changes", path: "oil-changes", description: "Essential maintenance for engine longevity." },
+  { icon: '/Tire-repairing.webp', title: "Wheel & Tire", path: "wheeltire", description: "Tire rotation, balancing, and replacement." },
+   { icon: '/suspension.webp', title: "Suspension & Steering", path: "suspensionsteering", description: "Smooth out your ride and maintain control." },
 
-  { icon: '/car-engine-diagnostic.webp', title: "NY State Inspection", path: "NYStateInspection", description: "Official vehicle safety and emissions testing." },
-  { icon: '/carMaintain.webp', title: "Preventative Maintenance", path: "PreventativeMaintenance", description: "Keep your car running like new and avoid costly repairs." },
-  { icon: '/BatteryService.webp', title: "Battery Services", path: "BatteryServices", description: "Testing, charging, and replacement for all vehicle batteries." },
+  { icon: '/car-engine-diagnostic.webp', title: "NY State Inspection", path: "ny-state-inspection", description: "Official vehicle safety and emissions testing." },
+  { icon: '/carMaintain.webp', title: "Preventative Maintenance", path: "preventative-maintenance", description: "Keep your car running like new and avoid costly repairs." },
+  { icon: '/BatteryService.webp', title: "Battery Services", path: "battery-services", description: "Testing, charging, and replacement for all vehicle batteries." },
 
 ];
 

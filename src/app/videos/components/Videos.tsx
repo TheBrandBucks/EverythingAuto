@@ -131,8 +131,32 @@ export default function Videos() {
     setSelectedVideoId(null);
   };
   const hasMoreVideos = videosToShow < videos.length;
+
+  const videoListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": videos.map((video, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": {
+        "@type": "VideoObject",
+        "name": video.title,
+        "description": video.description,
+        "thumbnailUrl": `https://everythingauto.com${video.thumbnail}`,
+        "uploadDate": "2024-01-01T00:00:00-05:00",
+        "embedUrl": `https://www.youtube.com/embed/${video.youtubeId}`,
+        "contentUrl": `https://www.youtube.com/watch?v=${video.youtubeId}`,
+      },
+    })),
+  };
+
     return (
    <div className="min-h-screen bg-slate-50">
+
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify(videoListSchema) }}
+  />
 
   {/* ================= HERO ================= */}
 {/* ================= HERO SECTION ================= */}
@@ -261,9 +285,16 @@ export default function Videos() {
         >
 
           {/* ================= THUMBNAIL ================= */}
-          <div
-            className="relative aspect-video cursor-pointer overflow-hidden bg-slate-950"
-            onClick={() => handleCardClick(video.youtubeId)}
+          <a
+            href={`https://www.youtube.com/watch?v=${video.youtubeId}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`Play video: ${video.title}`}
+            className="relative block aspect-video cursor-pointer overflow-hidden bg-slate-950"
+            onClick={(e) => {
+              e.preventDefault();
+              handleCardClick(video.youtubeId);
+            }}
           >
 
             <Image
@@ -326,7 +357,7 @@ export default function Videos() {
               Watch Video
             </div>
 
-          </div>
+          </a>
 
 
           {/* ================= CARD CONTENT ================= */}

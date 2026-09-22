@@ -27,14 +27,14 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 const services = [
-  { icon: '/car-engine.png', title: "Engine Repair", path: "EngineRepair", description: "Expert diagnostics and repair for engine troubles." },
-  { icon: '/disc-brake.webp', title: "Brake Service", path: "BrakeService", description: "Ensuring your vehicle stops safely and reliably." },
-  { icon: '/diagnostics.webp', title: "Diagnostics", path: "Diagnostics", description: "Pinpointing issues with check engine lights." },
-  { icon: '/electric-system.webp', title: "Electrical Systems", path: "ElectricalSystems", description: "Fixing shorts, wiring, and battery issues." },
-  { icon: '/oil-change.webp', title: "Oil Changes", path: "OilChanges", description: "Essential maintenance for engine longevity." },
-  { icon: '/Tire-repairing.webp', title: "Wheel & Tire", path: "WheelTire", description: "Tire rotation, balancing, and replacement." },
-  { icon: '/gear-Transmition.webp', title: "Transmission", path: "Transmission", description: "Smooth gear shifting and performance." },
-  { icon: '/car-engine-diagnostic.webp', title: "NY State Inspection", path: "NYStateInspection", description: "Official vehicle safety and emissions testing." }
+  { icon: '/car-engine.png', title: "Engine Repair", path: "engine-repair", description: "Expert diagnostics and repair for engine troubles." },
+  { icon: '/disc-brake.webp', title: "Brake Service", path: "brake-service", description: "Ensuring your vehicle stops safely and reliably." },
+  { icon: '/diagnostics.webp', title: "Diagnostics", path: "diagnostics", description: "Pinpointing issues with check engine lights." },
+  { icon: '/electric-system.webp', title: "Electrical Systems", path: "electrical-systems", description: "Fixing shorts, wiring, and battery issues." },
+  { icon: '/oil-change.webp', title: "Oil Changes", path: "oil-changes", description: "Essential maintenance for engine longevity." },
+  { icon: '/Tire-repairing.webp', title: "Wheel & Tire", path: "wheeltire", description: "Tire rotation, balancing, and replacement." },
+  { icon: '/gear-Transmition.webp', title: "Transmission", path: "transmission", description: "Smooth gear shifting and performance." },
+  { icon: '/car-engine-diagnostic.webp', title: "NY State Inspection", path: "ny-state-inspection", description: "Official vehicle safety and emissions testing." }
 ];
 
 

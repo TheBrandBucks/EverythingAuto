@@ -8,18 +8,18 @@ import { usePathname } from 'next/navigation';
 import FAQSection from '../common/FAQSection';
 
 const otherServices = [
-    { name: "Engine Repair", path: "EngineRepair" },
-    { name: "Brake Service", path: "BrakeService" },
-    { name: "Diagnostics", path: "Diagnostics" },
-    { name: "Electrical Systems", path: "ElectricalSystem" },
-    { name: "Oil Changes", path: "OilChanges" },
-    { name: "Wheel & Tire", path: "WheelTire" },
-    { name: "Transmission", path: "Transmission" },
-    { name: "Air Conditioning", path: "AirConditioning" },
-    { name: "Preventative Maintenance", path: "PreventativeMaintenance" },
-    { name: "Battery Services", path: "BatteryServices" },
-    { name: "NY State Inspection", path: "NYStateInspection" },
-    { name: "Suspension & Steering", path: "SuspensionSteering" }
+    { name: "Engine Repair", path: "engine-repair" },
+    { name: "Brake Service", path: "brake-service" },
+    { name: "Diagnostics", path: "diagnostics" },
+    { name: "Electrical Systems", path: "electrical-systems" },
+    { name: "Oil Changes", path: "oil-changes" },
+    { name: "Wheel & Tire", path: "wheeltire" },
+    { name: "Transmission", path: "transmission" },
+    { name: "Air Conditioning", path: "air-conditioning" },
+    { name: "Preventative Maintenance", path: "preventative-maintenance" },
+    { name: "Battery Services", path: "battery-services" },
+    { name: "NY State Inspection", path: "ny-state-inspection" },
+    { name: "Suspension & Steering", path: "suspensionsteering" }
 ];
 import { ReactNode } from "react";
 interface ServicePageLayoutProps {
@@ -162,7 +162,7 @@ export default function ServicePageLayout({
                                 <div className="flex items-start space-x-3">
                                     <Shield className="w-6 h-6 text-[var(--color-primary)] mt-1 flex-shrink-0" />
                                     <div>
-                                        <h4 className="font-semibold text-[var(--color-text)]">ASE Certified Technicians</h4>
+                                        <h4 className="font-semibold text-[var(--color-text)]">30+ ASE Certified Technicians</h4>
                                         <p className="text-sm text-[var(--color-text-light)]">Expertise you can trust for all makes and models.</p>
                                     </div>
                                 </div>
