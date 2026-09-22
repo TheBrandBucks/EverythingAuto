@@ -227,7 +227,7 @@ export default function GoogleReviews() {
 
             {/* Nav controls - connected tab beneath the review panel */}
             {shouldShowCarousel && (
-              <div className="relative z-0 mx-auto -mt-1 flex w-fit items-center justify-center gap-1.5 rounded-b-full rounded-t-none border border-slate-200 border-t-0 !bg-white px-2.5 pb-1 pt-1.5 shadow-[inset_0_-2px_4px_rgba(255,255,255,0.9),inset_0_2px_3px_rgba(15,23,42,0.07),0_8px_18px_rgba(15,23,42,0.16)] sm:-mt-3 sm:gap-4 sm:px-4 sm:pb-1.5 sm:pt-5">
+              <div className="relative z-0 mx-auto -mt-1 flex w-fit items-center justify-center gap-1.5 rounded-b-full rounded-t-none border border-slate-200 border-t-0 !bg-white px-2.5 pb-1 pt-1.5 shadow-[inset_0_-2px_4px_rgba(255,255,255,0.9),inset_0_2px_3px_rgba(15,23,42,0.07),0_8px_18px_rgba(15,23,42,0.16)] sm:-mt-3 sm:gap-4 sm:px-4 sm:pb-1.5 sm:pt-3">
                   <button
                     type="button"
                     aria-label="Show previous testimonial"
