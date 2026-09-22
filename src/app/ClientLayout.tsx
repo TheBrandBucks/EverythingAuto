@@ -517,7 +517,7 @@ export default function Layout({
                         </div>
                     </header>
 
-                    <main className="flex-1 pt-20">{children}</main>
+                    <main className="flex-1">{children}</main>
 
                     <button
                         type="button"

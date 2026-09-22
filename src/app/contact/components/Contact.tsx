@@ -69,7 +69,7 @@ export default function Contact() {
   })
 
   return (
-    <div className="-mt-20 bg-[var(--bg-light)]">
+    <div className="bg-[var(--bg-light)]">
       {/* SEO Hero Section */}
       {/* ================= CONTACT HERO ================= */}
 {/* ================= CONTACT HERO + TRUST INDICATORS ================= */}

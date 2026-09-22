@@ -43,7 +43,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section ref={heroRef} className="relative isolate z-0 -mt-20 flex min-h-[calc(110vh-9rem)] items-center justify-center overflow-hidden bg-slate-950 text-white sm:min-h-[680px]">
+    <section ref={heroRef} className="relative isolate z-0 flex min-h-[calc(110vh-9rem)] items-center justify-center overflow-hidden bg-slate-950 text-white sm:min-h-[680px]">
       <div className="absolute inset-0 overflow-hidden bg-slate-950">
         <iframe
           ref={videoRef}
